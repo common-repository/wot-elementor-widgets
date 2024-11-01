@@ -1,0 +1,53 @@
+.wot-testimonial-slider-main {position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%;background-repeat:no-repeat;}
+.wot-testimonial-slider-inner { width:800px; position:relative;}
+.wot-slider-slide-repeater {position:relative;width:800px;display:none;height:400px;transition:transform 1s;}
+.wot-slider-active-slide {display:block;}
+.wot-slider-slide-enter-left { transform:translateX(-100%);}
+.wot-slider-slide-enter-right { transform:translateX(100%);}
+.wot-slider-slide-exit-left {transform:translateX(100%);}
+.slide-exit-right {transform:translateX(-100%);}
+.wot-slider-slide-hero-img {position:absolute;top:0;right:0;height:100%;}
+.wot-slider-slide-hero-img img {height:100% !important;border-radius:10px;width:320px;object-fit:cover;pointer-events:none;user-select:none;}
+.wot-testimonial-slider-content {position:absolute;left:0;top:50%;transform:translateY(-50%);width:520px;height:auto;color:#4d4352;background:rgba(255, 255, 255, 0.7);box-shadow:0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter:blur(4.5px);-webkit-backdrop-filter:blur(4.5px);border-radius:10px;padding:45px;z-index:2;user-select:none;}
+.wot-testimonial-slider-indicator {display:flex;justify-content:center;flex-wrap: wrap;}
+.wot-testimonial-slider-indicator .btn {display:inline-block;margin:4px;cursor:pointer;transition:all 0.3s ease-in-out;}
+.wot-slider {width:100%;overflow:hidden;}
+.wot-testimonialSliderButton { position:absolute;left:50%;transform:translateX(-50%);width:100%;display:flex;z-index:999;justify-content:space-between;align-items:center;box-sizing:border-box;}
+.slider-button-prev,.slider-button-next {background-color:#ffffff;color:#333333;border:none;padding:10px 15px;cursor:pointer;font-size:18px;transition:background-color 0.3s, color 0.3s;}
+.slider-button-prev:hover,.slider-button-next:hover {background-color:#333333;color:#ffffff;}
+.wot-testimonial-slider-name h2{font-size: 24px;font-weight: 600;}
+@media (max-width:850px) {
+  .wot-slider {overflow: unset;}
+  .wot-testimonial-slider-content {padding: 20px;}
+  .wot-testimonial-slider-inner {width:500px;}
+  .wot-slider-slide-hero-img img {width:200px;}
+  .wot-slider-slide-repeater {width:600px;height:320px;}  
+  .wot-testimonial-slider-content {width:420px;height:auto;padding:20px;}
+}
+@media (max-width:769px) {
+  .wot-slider-slide-repeater {width:500px;height:320px;}  
+  .wot-testimonial-slider-content {width:340px;}
+}
+@media (max-width:605px) {
+  .wot-testimonialSliderButton{ display: none;}
+  .wot-testimonial-slider-indicator .btn{background-color: var(--e-global-color-primary);}
+  .wot-testimonial-slider-indicator .btn.wot-active{background-color: var(--e-global-color-primary);}
+}
+@media (max-width:550px) {
+  .wot-testimonial-slider-inner {width:350px;}
+  .wot-slider-slide-repeater {position:relative;width:100%;height:300px;}
+  .wot-slider-slide-hero-img {top:67%; height:100px; z-index:5;}
+  .wot-slider-slide-hero-img img { width:100px;}
+  .wot-testimonialSliderButton {top:40%;padding:0 5px;}
+  .wot-testimonial-slider-content { width:350px;}
+  .wot-testimonial-slider-designation {width: 50%;}
+}
+
+@media (max-width:460px) {
+  .wot-slider-slide-hero-img { top: 66%;}
+  .wot-testimonial-slider-inner { width:300px;}
+  .wot-testimonialSliderButton {top:40%;padding:0 3px;}
+  .wot-testimonial-slider-content {width:300px;}
+  .wot-testimonial-slider-designation{word-break: break-all;}   
+  .wot-testimonial-slider-designation {width: 55%;}
+}
